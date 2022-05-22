@@ -18,14 +18,14 @@
     <div class="row mt-2">
         <div id=buttonsDiv class="col text-center mazo">
             <button id='new' class="btn btn-danger">New game</button>
-            <button id='take' class="btn btn-primary">Card</button>
-            <button id='stop' class="btn btn-primary">Stop</button>
+            <button id='take' disabled='disabled' class="btn btn-primary">Card</button>
+            <button id='stop' disabled='disabled' class="btn btn-primary">Stop</button>
         </div>
     </div>
     <div class="row container">
         <div class="col">
             <h1 id="title">Player 1- <small>0</small></h1>
-            <div id="player-cards">
+            <div id="player-cards" class="cardsDiv">
                 <!-- <img class="card" src="./assets/cartas/AS.png" alt=""> -->
             </div>
         </div>
@@ -33,13 +33,17 @@
     <div class="row container mt-2">
         <div class="col">
             <h1 id="title">Computer- <small>0</small></h1>
-            <div id="computer-cards">
+            <div id="computer-cards" class="cardsDiv">
                 <!-- <img class="card" src="./assets/cartas/AS.png" alt=""> -->
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.3/underscore-umd-min.js"></script>
     <script src="./assets/js/game.js"></script>
+    <script>
+        console.log(miModulo);
+        miModulo.newGame();
+    </script>
 </body>
 
 </html>
