@@ -81,7 +81,7 @@ const miModulo = (() => {
             } else if (computerPoints > 21) {
                 alert('The player WIN, YEAAHH');
             } else {
-                alert('The player ONE WIN BIG LOL');
+                alert('The computer Win');
             }
         }, 10);
     }
